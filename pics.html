@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Task 1</title>
+    <script>
+        window.addEventListener("load", function () {
+            var
+                wrapper = document.getElementsByTagName("div")[0],
+                flag;
+            wrapper.addEventListener("click", function (e) {
+                var img = document.img;
+                if (e.target.value === "Elephant") {
+                    if (flag) {
+                        img.src = "";
+                    }
+                    else {
+                        img.src = "4Ohyw7KpHTc.jpg";
+                    }
+                }
+                if (e.target.value === "Cat") {
+                    if (flag) {
+                        img.src = "";
+                    }
+                    else {
+                        img.src = "eGyLX0eQhL4.jpg";
+                    }
+                }
+                if (e.target.value === "Flowers") {
+                    if (flag) {
+                        img.src = "";
+                    }
+                    else {
+                        img.src = "QyXsV0IGDcY.jpg";
+                    }
+                }
+                flag = !flag;
+            });
+        })
+    </script>
+
+</head>
+<body>
+    <div>
+        <input type="button" value="Elephant" />
+        <input type="button" value="Cat" />
+        <input type="button" value="Flowers" />
+        <br />
+        <img src="" name="img" />
+    </div>
+</body>
+</html>
